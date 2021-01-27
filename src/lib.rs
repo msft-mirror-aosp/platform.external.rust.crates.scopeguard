@@ -500,6 +500,7 @@ mod tests {
 
     #[cfg(feature = "use_std")]
     #[test]
+    #[ignore = "Android uses panic_abort"]
     fn test_defer_success_2() {
         let drops = Cell::new(0);
         let _ = catch_unwind(AssertUnwindSafe(|| {
@@ -511,6 +512,7 @@ mod tests {
 
     #[cfg(feature = "use_std")]
     #[test]
+    #[ignore = "Android uses panic_abort"]
     fn test_defer_unwind_1() {
         let drops = Cell::new(0);
         let _ = catch_unwind(AssertUnwindSafe(|| {
