@@ -23,6 +23,17 @@
       "path": "external/rust/crates/vulkano"
     }
   ],
+  "postsubmit": [
+    {
+      "name": "ZipFuseTest"
+    },
+    {
+      "name": "apkdmverity.test"
+    },
+    {
+      "name": "scopeguard_test_src_lib"
+    }
+  ],
   "presubmit": [
     {
       "name": "ZipFuseTest"
